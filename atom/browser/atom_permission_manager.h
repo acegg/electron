@@ -76,7 +76,7 @@ class AtomPermissionManager : public content::PermissionManager {
 
  private:
   class PendingRequest;
-  using PendingRequestsMap = IDMap<std::unique_ptr<PendingRequest>>;
+  using PendingRequestsMap = base::IDMap<std::unique_ptr<PendingRequest>>;
 
   RequestHandler request_handler_;
 
